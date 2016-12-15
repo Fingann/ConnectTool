@@ -180,14 +180,26 @@
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3*" />
-                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="8*" />
                         <ColumnDefinition Width="2*" />
                     </Grid.ColumnDefinitions>
-                    
-                        <TextBlock x:Name="PopupTitle" Grid.Column="0" Text="{Binding PopupMessage.Title, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="25" Margin="7 0 30 1"  />
-                        <TextBlock x:Name="PopupDescription" Grid.Column="1" Text="{Binding PopupMessage.Description, UpdateSourceTrigger=PropertyChanged}" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" />
 
-                    
+                    <TextBlock
+                        x:Name="PopupTitle"
+                        Grid.Column="0"
+                        Margin="7,0,30,1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontSize="25"
+                        Text="{Binding PopupMessage.Title, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock
+                        x:Name="PopupDescription"
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        Text="{Binding PopupMessage.Description, UpdateSourceTrigger=PropertyChanged}"
+                        TextWrapping="WrapWithOverflow" />
+
+
                     <Button
                         x:Name="PopupClose"
                         Grid.Column="2"

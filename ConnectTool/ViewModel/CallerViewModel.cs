@@ -49,7 +49,7 @@ namespace ConnectTool.ViewModel
         private void ExecuteMyCommand()
         {
             
-            var popup = new ErrorPopupMessage() { Description = "Super TEST TEST TEST TEST TEST ", Title = "SuperTest" };
+            var popup = new ErrorPopupMessage() { Description = "TEST TEST TEST TEST TEST ", Title = "Error" };
             Messenger.Default.Send<IPopupMessage>(popup);
         }
     }

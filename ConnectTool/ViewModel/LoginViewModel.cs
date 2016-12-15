@@ -44,7 +44,7 @@ namespace ConnectTool.ViewModel
         private void ExecuteMyCommand()
         {
             Messenger.Default.Send<IDisplayable>(new CallerViewModel());
-            var popup = new InfoPopupMessage() {Description = "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokke", Title = "SuperTest"};
+            var popup = new InfoPopupMessage() {Description = "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokke", Title = "Login"};
             Messenger.Default.Send<IPopupMessage>(popup);
         }
 
